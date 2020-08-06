@@ -1,0 +1,9 @@
+.ant-popover-inner-content {
+  padding: 0px 0px !important;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.ant-popover {
+  position: fixed;
+  padding-top: 5px;
+}

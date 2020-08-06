@@ -1,0 +1,13 @@
+.additional {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 1rem;
+  color: #ee4d2d;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ant-card-body {
+  padding: 10px 5px;
+}

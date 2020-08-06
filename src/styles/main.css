@@ -1,0 +1,134 @@
+body {
+  line-height: 1.2;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 0.8125rem;
+  font-weight: 900;
+  font-family: "Roboto Light";
+}
+
+a {
+  color: white !important;
+}
+
+.shopee-top {
+  height: 119px;
+  width: 100%;
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+.shopee-top--sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(0);
+  z-index: 100;
+}
+
+.navigation-wrapper {
+  height: 34px;
+}
+
+.navbar {
+  width: inherit;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 34px;
+}
+
+.bar-left {
+  width: 40%;
+  display: flex;
+}
+
+.bar-left > a {
+  padding: 10px 7px;
+}
+
+.bar-center {
+  width: 30%;
+}
+
+.bar-right {
+  display: flex;
+  width: 30%;
+}
+
+.bar-right > a {
+  padding: 10px 7px;
+}
+
+.header-with-search-wrapper {
+  height: 85px;
+}
+
+.left-search {
+  width: 20%;
+}
+.left-search > svg {
+  width: 65%;
+  fill: white;
+}
+.center-search {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.search {
+  height: 38px;
+  display: flex;
+  width: 604px;
+  background: white;
+  border-radius: 2%;
+}
+.shopee-svg-icon {
+  fill: white;
+}
+.search-button {
+  background-color: #f53d2d;
+  height: 34px;
+  width: 50px;
+  cursor: pointer;
+  margin-top: 2px;
+  border-radius: 2px;
+}
+.search-input {
+  height: 34px;
+  width: 550px;
+  border: none;
+  outline: none;
+}
+
+.search-button > svg {
+  padding-top: 9px;
+  padding-left: 15px;
+  fill: white !important;
+}
+
+.category-on-nav {
+  height: 19px;
+}
+
+.right-search {
+  width: 20%;
+}
+.right-search > svg {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  fill: white;
+  color: white;
+  stroke: white;
+}
+.header-with-search {
+  max-width: 1200px;
+  height: 59px;
+  margin: 5px auto;
+  display: flex;
+}
+
+.products-container {
+  padding-top: 130px;
+  margin: 0 50px;
+}
+

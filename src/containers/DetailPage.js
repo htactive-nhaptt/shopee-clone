@@ -6,6 +6,9 @@ import "../containers/detailsSyles/s2.css";
 import { getProduct } from "../util/cartUtils";
 import { fetchProducts } from "../actions/productActions";
 import { addToCart, subQuantity, addQuantity } from "../actions/cardActions";
+import { ReactComponent as Decrement } from "../assets/icons/de.svg";
+import { ReactComponent as Increment } from "../assets/icons/in.svg";
+import { ReactComponent as CartIcon } from "../assets/icons/cart.svg";
 
 const ContainerDetailPage = styled.div`
   padding-top: 100px;
@@ -132,15 +135,7 @@ const DetailPage = (props) => {
                                   onClick={decreaseNumProduct}
                                   className="_1zT8xu"
                                 >
-                                  <svg
-                                    className="shopee-svg-icon"
-                                    enableBackground="new 0 0 10 10"
-                                    viewBox="0 0 10 10"
-                                    x="0"
-                                    y="0"
-                                  >
-                                    <polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon>
-                                  </svg>
+                                  <Decrement />
                                 </button>
                                 <input
                                   className="_1zT8xu _18Y8Ul"
@@ -152,15 +147,7 @@ const DetailPage = (props) => {
                                   onClick={increaseNumProduct}
                                   className="_1zT8xu"
                                 >
-                                  <svg
-                                    className="shopee-svg-icon icon-plus-sign"
-                                    enableBackground="new 0 0 10 10"
-                                    viewBox="0 0 10 10"
-                                    x="0"
-                                    y="0"
-                                  >
-                                    <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5"></polygon>
-                                  </svg>
+                                  <Increment />
                                 </button>
                               </div>
                             </div>
@@ -180,56 +167,7 @@ const DetailPage = (props) => {
                         className="btn btn-tinted btn--l YtgjXY _3a6p6c"
                         aria-disabled="false"
                       >
-                        <svg
-                          className="shopee-svg-icon _343Jzb icon-add-to-cart"
-                          enableBackground="new 0 0 15 15"
-                          viewBox="0 0 15 15"
-                          x="0"
-                          y="0"
-                        >
-                          <g>
-                            <g>
-                              <polyline
-                                fill="none"
-                                points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeMiterlimit="10"
-                              ></polyline>
-                              <circle
-                                cx="6"
-                                cy="13.5"
-                                r="1"
-                                stroke="none"
-                              ></circle>
-                              <circle
-                                cx="11.5"
-                                cy="13.5"
-                                r="1"
-                                stroke="none"
-                              ></circle>
-                            </g>
-                            <line
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeMiterlimit="10"
-                              x1="7.5"
-                              x2="10.5"
-                              y1="7"
-                              y2="7"
-                            ></line>
-                            <line
-                              fill="none"
-                              strokeLinecap="round"
-                              strokeMiterlimit="10"
-                              x1="9"
-                              x2="9"
-                              y1="8.5"
-                              y2="5.5"
-                            ></line>
-                          </g>
-                        </svg>
-
+                        <CartIcon />
                         <span>add to cart</span>
                       </button>
                       <button

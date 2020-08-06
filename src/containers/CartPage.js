@@ -15,6 +15,21 @@ const CartPageContainer = styled.div`
   padding: 0 100px;
 `;
 
+
+const GroupInput = styled.div`
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+`;
+
+
 const CartPage = (props) => {
   const { productsInCart, deleteItem, subQuantity, cart, addQuantity } = props;
   const totalAllItems = allItemsPrice(productsInCart);
@@ -36,7 +51,7 @@ const CartPage = (props) => {
                   <a
                     className="cart-item-overview__thumbnail-wrapper"
                     title="Korean Style Women Shoulder / Tote  Bag [JESSICA]"
-                    href="https://shopee.sg/Korean-Style-Women-Shoulder-Tote-Bag-JESSICA--i.72368600.1208689186"
+                    href=""
                   >
                     <div
                       className="cart-item-overview__thumbnail"
@@ -66,43 +81,53 @@ const CartPage = (props) => {
                   </span>
                 </div>
               </div>
-              <div className="cart-item__cell-quantity">
-                <div className="_19lAw4 shopee-input-quantity">
+
+                <GroupInput>
                   <button
-                    onClick={() => subQuantity(item.id)}
-                    className="_1zT8xu"
+                      onClick={() => subQuantity(item.id)}
+                      className="_1zT8xu"
                   >
                     <svg
-                      className="shopee-svg-icon"
-                      enableBackground="new 0 0 10 10"
-                      viewBox="0 0 10 10"
-                      x="0"
-                      y="0"
+                        className="shopee-svg-icon"
+                        enableBackground="new 0 0 10 10"
+                        viewBox="0 0 10 10"
+                        x="0"
+                        y="0"
                     >
                       <polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon>
                     </svg>
                   </button>
                   <input
-                    className="_1zT8xu _18Y8Ul"
-                    type="text"
-                    value={item.quantity}
+                      className="_1zT8xu _18Y8Ul"
+                      type="text"
+                      value={item.quantity}
                   />
                   <button
-                    onClick={() => addQuantity(item.id)}
-                    disabled={item.inventory > 0 ? '' : 'disabled'  }                  className="_1zT8xu"
+                      onClick={() => addQuantity(item.id)}
+                      disabled={item.inventory > 0 ? '' : 'disabled'  }                  className="_1zT8xu"
                   >
                     <svg
-                      className="shopee-svg-icon icon-plus-sign"
-                      enableBackground="new 0 0 10 10"
-                      viewBox="0 0 10 10"
-                      x="0"
-                      y="0"
+                        className="shopee-svg-icon icon-plus-sign"
+                        enableBackground="new 0 0 10 10"
+                        viewBox="0 0 10 10"
+                        x="0"
+                        y="0"
                     >
                       <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5"></polygon>
                     </svg>
                   </button>
-                </div>
-              </div>
+                </GroupInput>
+
+
+
+
+
+
+
+
+
+
+
               <div className="cart-item__cell-total-price">
                 <span>${item.quantity * item.price}</span>
               </div>

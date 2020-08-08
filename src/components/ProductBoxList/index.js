@@ -7,12 +7,17 @@ const ProductsBoxList = (props) => {
 
   const productListCard = products.map((product) => {
     return (
-      <Col key={product.id} md={4}>
+      <Col
+        style={{ width: "182px", margin: "8px 0px" }}
+        key={product.id}
+        lg={4}
+        md={4}
+      >
         <Card
           onClick={() => handleClickDetail(product.id)}
           hoverable
           style={{ width: 189 }}
-          cover={<img alt="example" src={product.image} />}
+          cover={<img alt="" src={product.image} />}
         >
           <Meta title={product.title} />
           <div className="additional">
@@ -26,7 +31,7 @@ const ProductsBoxList = (props) => {
 
   return (
     <div className="products-container">
-      <Row gutter={[8, 16]}>{productListCard}</Row>
+      <Row gutter={[32, 16]}>{productListCard}</Row>
     </div>
   );
 };

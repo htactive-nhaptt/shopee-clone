@@ -5,7 +5,7 @@ import CartPage from "./containers/CartPage";
 import HeaderPage from "./components/Header";
 import TestPage from "./containers/TestPage";
 import DetailPage from "./containers/DetailPage";
-
+import LoginPage from "./containers/LoginPage";
 function App() {
   return (
     <div>
@@ -14,6 +14,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/checkout" component={CartPage} />
         <Route path={"/detail/:id"} component={DetailPage} />
+        <Route path={"/login"} component={LoginPage} />
         <Route path="/test" component={TestPage} />
       </Switch>
     </div>
